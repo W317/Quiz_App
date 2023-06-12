@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="server.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div id="course-name">WPR</div>
+    <div class="mern-items">
+      <div class="stack-circle">M</div>
+      <div class="stack-circle">E</div>
+      <div class="stack-circle">R</div>
+      <div class="stack-circle">N</div>
+    </div>
+  </header>
+
+  <article>
+    <section id="quiz-name">
+      <h2 class="quiz-name-text">HTML Quiz</h2>
+    </section>
+
+    <section id="introduction">
+      <p id="author">By Liem</p>
+      <h2>The Test</h2>
+      <p class="detail">The test contains 10 questions and there is no time limit.</p>
+      <p class="detail">The test is not official, it's just a nice way to see how much you know, or don't know, about
+        HTML.</p>
+      <h2>Count Your Score</h2>
+      <p class="detail">You will get 1 point for each correct answer. At the end of the Quiz, your total score will be
+        displayed. Maximum score is 10 points.</p>
+      <div id="box-start">
+        <div class="start-the-quiz box-items">
+          <h2>Start the quiz</h2>
+        </div>
+        <div class="good-luck box-items">Good luck!</div>
+        <button id="btn-start">Start the HTML quiz ❯
+        </button>
+        <button id="btn-start" class="btn-add">Add Quiz ❯
+        </button>
+      </div>
+    </section>
+
+    <section id="attempt-quiz">
+      <div class="question-arr"></div>
+      
+
+      <div id="box-submit">
+        <button id="btn-submit">
+          Submit your answer ❯
+        </button>
+      </div>
+    </section>
+
+    <section id="review-quiz">
+      <div class="reviewQuestion">
+
+      </div>
+
+      <div id="box-result">
+        <div class="result">Result:</div>
+        <div class="result-show"></div>
+        <button id="btn-result">Try again
+        </button>
+      </div>
+
+    </section>
+
+    <section id="add-quiz">
+      
+        <form class="quiz-form">
+          <div class="title">
+            <h2>Add New Quiz</h2>
+          </div>
+          <label class="label-add-form" for="question">Question:</label>
+          <input class="input-add-form" type="text" id="question" name="question" required>
+        
+          <label class="label-add-form" for="answers">Answers:</label>
+          <input class="input-add-form" type="text" id="answers" name="answers" placeholder="Enter answers separated by commas" required>
+        
+          <label class="label-add-form" for="correctAnswer">Correct Answer:</label>
+          <input class="input-add-form" type="number" id="correctAnswer" name="correctAnswer" required>
+          
+          <button class="add-quiz-btn" type="submit">Add Quiz</button>
+        </form>
+
+    </section>
+
+    <section id="update-quiz">
+
+    </section>
+
+  </article>
+</body>
+</html>
